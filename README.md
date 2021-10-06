@@ -1,6 +1,6 @@
 ## Automated ELK Stack Deployment
 The files in this repository were used to configure the network depicted below.
-![TODO: Update the path with the name of your diagram](./Images/Azure%20Cloud%20Network%20diagram%20-%20Week%2013_IA.drawio.png) 
+![TODO: Update the path with the name of your diagram](./Images/Azure%20Cloud%20Network%20diagram%20Private%20-%20Week%2013_IA-Page-1.drawio.png) 
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Cloud Network Diagram for ELK deployment file may be used to install only certain pieces of it, such as Filebeat.
   TODO: https://github.com/Iz21/Elk_Project/blob/main/Ansible/ELK-install.yml_
