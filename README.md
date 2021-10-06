@@ -36,13 +36,15 @@ TODO: 5601 Kibana Port
 
 Machines within the network can only be accessed by JumpBox Provisioner.
 - _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
-A summary of the access policies in place can be found in the table below.
+A summary of the access policies in place can be found in the table below
+
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
 | Jump Box | Yes                 | 10.0.0.4             |
 | Web-1    | No                  | 10.0.0.4             |
 | Web-2    | No                  | 10.0.0.4             |
 | ELK-VM   | No                  | 10.0.0.4             | 
+
 ### Elk Configuration
 
 https://github.com/Iz21/Elk_Project/blob/main/Ansible/Pentest.yml
