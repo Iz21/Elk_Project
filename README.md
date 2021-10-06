@@ -3,7 +3,7 @@ The files in this repository were used to configure the network depicted below.
 ![TODO: Update the path with the name of your diagram](./Images/Azure%20Cloud%20Network%20diagram%20-%20Week%2013_IA.drawio.png) 
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Cloud Network Diagram for ELK deployment file may be used to install only certain pieces of it, such as Filebeat.
-  - _TODO: https://github.com/Iz21/Elk_Project/blob/main/Ansible/ELK-install.yml_
+  TODO: https://github.com/Iz21/Elk_Project/blob/main/Ansible/ELK-install.yml_
 This document contains the following details:
 - Description of the Topologu
 - Access Policies
@@ -29,7 +29,9 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 ### Access Policies
 The machines on the internal network are not exposed to the public Internet. 
 Only the JumpBox Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: 5601 Kibana Port
+
+TODO: 5601 Kibana Port
+
 Machines within the network can only be accessed by JumpBox Provisioner.
 - _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
 A summary of the access policies in place can be found in the table below.
