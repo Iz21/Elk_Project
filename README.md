@@ -3,7 +3,7 @@ The files in this repository were used to configure the network depicted below.
 ![TODO: Update the path with the name of your diagram](./Images/Azure%20Cloud%20Network%20diagram%20-%20Week%2013_IA.drawio.png) 
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Cloud Network Diagram for ELK deployment file may be used to install only certain pieces of it, such as Filebeat.
-  - _TODO: Enter the playbook file._
+  - _TODO: https://github.com/Iz21/Elk_Project/blob/main/Ansible/ELK-install.yml_
 This document contains the following details:
 - Description of the Topologu
 - Access Policies
@@ -13,9 +13,9 @@ This document contains the following details:
 - How to Use the Ansible Build
 ### Description of the Topology
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
+Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
 - _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system sytem traffic.
 - _TODO: What does Filebeat watch for?_
 - _TODO: What does Metricbeat record?_
 The configuration details of each machine may be found below.
@@ -23,21 +23,22 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+| Web-1    | Webserver| 10.0.0.5   | Linux            |
+| Web-2    | Webserver| 10.0.0.6   | Linux            |
+| ELK-VM   | Monitoring 10.1.0.4   | Linux            |
 ### Access Policies
 The machines on the internal network are not exposed to the public Internet. 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
-Machines within the network can only be accessed by _____.
+Only the JumpBox Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+- _TODO: 5601 Kibana Port
+Machines within the network can only be accessed by JumpBox Provisioner.
 - _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
 A summary of the access policies in place can be found in the table below.
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Jump Box | Yes                 | 10.0.0.4             |
+| Web-1    | No                  | 10.0.0.4             |
+| Web-2    | No                  | 10.0.0.4             |
+| ELK-VM   | No                  | 10.0.0.4             | 
 ### Elk Configuration
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 - _TODO: What is the main advantage of automating configuration with Ansible?_
