@@ -65,11 +65,18 @@ A summary of the access policies in place can be found in the table below
 https://github.com/Iz21/Elk_Project/blob/main/Ansible/Pentest.yml
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+
+What is the main advantage of automating configuration with Ansible?
+- Scalability and speed of enabling applications
+- The different applications of Ansible include provisioning, configuration management, deploying applications, security and compliance, and orchestration. (https://www.whizlabs.com/blog/ansible-advantages-and-disadvantages/)
+
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+
+In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
 - ...
 - ...
+- 
+
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 ![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
 ### Target Machines & Beats
