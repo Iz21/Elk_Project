@@ -25,12 +25,12 @@ What is the advantage of a jump box?
 
 - A jump box acts as a single node entry point for a user to gain access  
 
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
+What does Filebeat watch for?
+- Filebeat monitors log files or specified locations, collects log events and forwards them for indexing based on how it has been configured
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system sytem traffic.
-- _TODO: What does Filebeat watch for?_
-
-
-- _TODO: What does Metricbeat record?_
+What does Metricbeat record?
+- Metricbeat periodically collects metrics from OS or any services running on a server, and then ships these metrics to any output that it is configured for. 
 
 
 The configuration details of each machine may be found below.
