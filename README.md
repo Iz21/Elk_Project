@@ -5,7 +5,7 @@ The files in this repository were used to configure the network depicted below.
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Cloud Network Diagram for ELK deployment file may be used to install only certain pieces of it, such as Filebeat.
 [ELK-install](https://github.com/Iz21/Elk_Project/blob/main/Ansible/ELK-install.yml)
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -47,10 +47,10 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 Only the JumpBox Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 
-TODO: 5601 Kibana Port
+5601 Kibana Port
 
 Machines within the network can only be accessed by JumpBox Provisioner.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+- Which machine did you allow to access your ELK VM? What was its IP address?_
 A summary of the access policies in place can be found in the table below
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
@@ -93,7 +93,7 @@ We have installed the following Beats on these machines:
 `Filebeat` `Metricbeat`
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc.
+- In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc.
 
 https://github.com/Iz21/Elk_Project/blob/main/Ansible/Metricbeat-playbook.yml
 
